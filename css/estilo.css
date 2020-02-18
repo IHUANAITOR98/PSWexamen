@@ -1,0 +1,85 @@
+
+@keyframes girar{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(180deg);}
+}
+
+@keyframes backanimation{
+	from{background-color: #F8F1FF;}
+	to{background-color: #D6D6B1;}
+}
+
+body{
+	align-items: center;
+	height: 100px;
+	margin: 0;
+	background-color: #33134C; 
+}
+
+nav{
+	font-family: Comic Sans;
+	font-size: 30px;
+	align-items: center;
+	text-align:center;
+	height: 10%;
+	position: fixed;
+	top:0; left:0; right:0;
+	animation: backanimation 1s infinite;
+
+}
+
+.Principal{
+	border: 6px solid white;
+	border-radius: 20px;
+	margin-top: 10%;
+	width: 90%;
+	heigth:400px;
+	margin-left: 5%;
+	background-color: #33134C;
+}
+
+article{
+	width: 40%;
+	height: 300px;
+	align-items: left;
+	background-color: #8D00C9;
+}
+
+
+aside{
+	width: 50%;
+	height: 300px;
+	background-color: #C77AE8;
+}
+
+article, aside{
+	display: inline-block;
+	margin: 1rem;
+}
+
+hr{
+	border: 0; 
+	height: 12px; 
+	box-shadow: inset 0 12px 12px -12px white;
+}
+
+.animacion{
+	align-content: center;
+	width: 64px;
+	height: 64px;
+	border: 16px solid #33134C;
+	border-top: 16px solid #C77AE8;
+	border-bottom: 16px solid #C77AE8;
+	border-radius: 50%;
+	animation: girar 0.5s linear infinite;
+}
+
+.vl {
+	margin-top: 10%;
+  border-left: 8px solid white;
+  height: 300px;
+  position: absolute;
+  left: 43%;
+  margin-left: -3px;
+  top: 0;
+}
